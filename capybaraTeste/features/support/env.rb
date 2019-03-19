@@ -1,10 +1,15 @@
-require 'capybara/cucumber'
+#require 'capybara/cucumber'
+
+require 'capybara'
+require 'capybara/dsl'
+require 'capybara/rspec/matchers'
 require 'selenium-webdriver'
 
+World(Capybara::DSL)
+World(Capybara::RSpecMatchers)
+
 Capybara.register_driver :selenium do |app|
-
     Capybara::Selenium::Driver.new(app, :browser => :chrome, :driver_path => "C:\Users\caio.andrade\Documents\Backup Caio\rubyteste\chromedriver.exe")
-
 end
 
 
