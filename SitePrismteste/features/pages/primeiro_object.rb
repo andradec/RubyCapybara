@@ -4,8 +4,6 @@ class PrimeiroObject < SitePrism::Page
     #Fazer os metodos
 
     @page = PrimeiroObject.new
-
-    @page.elemento.click
-    @page.metodo
+ 
 
 end
