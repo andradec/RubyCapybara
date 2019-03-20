@@ -1,11 +1,10 @@
 class TrabalharAJAX < SitePrism::Page
     set_url '/buscaelementos/botoes'
 
-    element :botao , '#teste'
-    element :msg , '#div1'
+    element :botao, '#teste'
+    element :msg, '#div1'
 
-    def clicarBotao
-        wait_for_botao
+    def clicarBotao    
         botao.click
     end
 end
